@@ -9,7 +9,6 @@ jobs:
       matrix:
         node:
           - 14
-          - latest
           - lts
         os:
           - ubuntu-latest
