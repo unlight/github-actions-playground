@@ -9,7 +9,7 @@ jobs:
       matrix:
         node:
           - 14
-          - lts
+          - node
         os:
           - ubuntu-latest
           - windows-latest
