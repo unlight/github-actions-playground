@@ -32,6 +32,11 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+      - name: 'Install depependencies'
+        uses: actions/setup-node@v2
+        run: npm install
       - name: 'Build'
         run: npm run build
       - name: 'Release'
