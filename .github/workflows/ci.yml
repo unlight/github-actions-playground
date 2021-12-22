@@ -35,10 +35,8 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v2
       - name: 'Install depependencies'
-        uses: actions/setup-node@v2
         run: npm install
       - name: 'Build'
-        uses: actions/setup-node@v2
         run: npm run build
       - name: 'Release'
         run: |
